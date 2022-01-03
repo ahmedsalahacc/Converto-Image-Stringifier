@@ -6,5 +6,5 @@ type the following in yout terminal with replacing:
         ```YourImgPath)``` with your image path
         ```f_value``` with the desired fringe value (defualt=10)
         ```dg_value``` with the desired downgrade value (defualt=8)
- '''      $(python main.py --input_path "YourImgPath" --fringe f_value --downgrade_factor dg_value) ```
+ ```$(python main.py --input_path "YourImgPath" --fringe f_value --downgrade_factor dg_value) ```
   
