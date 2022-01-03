@@ -12,6 +12,6 @@ While I was procrastinating, I decided to draw my own image using letters. So, t
 
 ## Examples
 * Input image example<br />
-![GitHub Dark](https://github.com/ahmedsalahacc/Converto-Image-Stringifier/blob/main/static/me1.png?raw=true | width=100))
+![GitHub Dark](https://github.com/ahmedsalahacc/Converto-Image-Stringifier/blob/main/static/me1.png?raw=true|width=100))
 * Output txt example<br />
-![GitHub Dark](https://github.com/ahmedsalahacc/Converto-Image-Stringifier/blob/main/static/Capture.PNG?raw=true | width=100))
+![GitHub Dark](https://github.com/ahmedsalahacc/Converto-Image-Stringifier/blob/main/static/Capture.PNG?raw=true|width=100))
