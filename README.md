@@ -11,7 +11,7 @@ While I was procrastinating, I decided to draw my own image using letters. So, t
   
 
 ## Examples
-* Input image example
+* Input image example<br />
 ![GitHub Dark](https://github.com/ahmedsalahacc/Converto-Image-Stringifier/blob/main/static/me1.png?raw=true)
-* Output image example
+* Output image example<br />
 ![GitHub Dark](https://github.com/ahmedsalahacc/Converto-Image-Stringifier/blob/main/static/Capture.PNG?raw=true)
