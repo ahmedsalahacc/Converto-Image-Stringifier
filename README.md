@@ -9,3 +9,9 @@ While I was procrastinating, I decided to draw my own image using letters. So, t
      <br />
  ```$(python main.py --input_path "YourImgPath" --fringe f_value --downgrade_factor dg_value) ``` 
   
+
+## Examples
+* Input image example
+![GitHub Dark](https://github.com/ahmedsalahacc/Converto-Image-Stringifier/blob/main/static/me1.png?raw=true)
+* Output image example
+![GitHub Dark](https://github.com/ahmedsalahacc/Converto-Image-Stringifier/blob/main/static/Capture.PNG?raw=true)
