@@ -3,7 +3,7 @@ While I was procrastinating, I decided to draw my own image using letters. So, t
 
 ## How to use
 * type the following in yout terminal with replacing:<br />
-        - ```YourImgPath)``` with your image path<br />
+        - ```YourImgPath``` with your image path<br />
         - ```f_value``` with the desired fringe value (defualt=10)<br />
         - ```dg_value``` with the desired downgrade value (defualt=8)<br />
      <br />
