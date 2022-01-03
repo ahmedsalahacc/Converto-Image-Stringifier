@@ -68,16 +68,45 @@ def quantize(img: np.array) -> np.array:
 
 
 def main():
-    ''' main code goes here'''
+    ''' 
+    main code goes here
+
+    How to use
+    ----------
+    type the following in yout terminal with replacing:
+        $(YourImgPath) with your image path
+        $(f_value) with the desired fringe value (defualt=10)
+        $(dg_value) with the desired downgrade value (defualt=8)
+    $(python main.py --input_path "YourImgPath" --fringe f_value --downgrade_factor dg_value)
+
+    The results will be found in the outputs directory of the working directory
+
+    NOTE
+    It is adviced to use VScode or a code editors interface to view the output ASCII image 
+    as it is a .txt file (as other code editors may alter the space between ASCII characters)
+    '''
     # directory of outputs
     cwd = os.getcwd()
     OUTPUT_DIR_PATH = os.path.join(cwd, 'outputs')
     if not os.path.isdir(OUTPUT_DIR_PATH):
         os.mkdir(OUTPUT_DIR_PATH)
-    # parser
-    FRINGE = 10
-    IMG_FILE = "D:\\Images\\me1.png"
-    RES_DOWNGRADE_FACTOR = 8
+
+    # argparser
+    parser = argparse.ArgumentParser(
+        description="Convert image to ASCII represented image")
+    parser.add_argument("--input_path", metavar='-i ',
+                        type=str, help='input image path')
+    parser.add_argument("--fringe", metavar='-f', type=int,
+                        help='range of pixels that will be treated alike', default=10)
+    parser.add_argument("--downgrade_factor", metavar='-df',
+                        type=int, help='downgrade factor of the imaeg resolution', default=8)
+
+    # constants
+    args = vars(parser.parse_args())
+
+    IMG_FILE = args['input_path']
+    FRINGE = args['fringe']
+    RES_DOWNGRADE_FACTOR = args['downgrade_factor']
     OUT_IMG_FILE = os.path.join(OUTPUT_DIR_PATH, IMG_FILE.split('\\')[-1]
                                 .split('.')[0]+'_encoded_out.txt')
 

@@ -2,7 +2,7 @@ import numpy as np
 
 
 class ImageEncoder:
-    def __init__(self, fringe:int=10):
+    def __init__(self, fringe: int = 10):
         '''
         Initialized the ImageaEncoder Class
 
@@ -13,7 +13,7 @@ class ImageEncoder:
         '''
         self.map = self.__genMap(fringe=fringe)
 
-    def convertImage(self, img: np.array, out_filename:str='img_enc_gen.txt'):
+    def convertImage(self, img: np.array, out_filename: str = 'img_enc_gen.txt'):
         '''
         Converts the image into an ASCII representation
 
@@ -23,7 +23,7 @@ class ImageEncoder:
         out_filename: str, represents the filename output
         '''
         # make sure that img is 2d array
-        assert(len(img.shape)==2)
+        assert(len(img.shape) == 2)
 
         h, w = img.shape
 
@@ -37,7 +37,7 @@ class ImageEncoder:
 
         print("Successful")
 
-    def __genMap(self, fringe:int, start_ASCII=33)->list:
+    def __genMap(self, fringe: int, start_ASCII=33) -> list:
         '''
         Generates a random table for the image to encode
         using ASCII Characters
@@ -69,8 +69,3 @@ class ImageEncoder:
 
         # return the map (Note that this is irreversible operation)
         return ASCII_map
-
-
-
-
-
