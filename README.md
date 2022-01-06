@@ -18,4 +18,4 @@ While I was procrastinating, I decided to draw my own image using letters. So, t
 
 ## Future Improvements
 * Generate PNG files directly instead of .txt files
-* Use valid emojies
+* Use emojies
